@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidBlogApp</string>
+    <string name="loginpage_email_hint">Your Email</string>
+    <string name="loginpage_password_hint">Password</string>
+    <string name="login_logo_img">Logo for login page</string>
+    <string name="login_button">Login to Account</string>
+    <string name="login_create_account_button" >Need a new Account?</string>
+</resources>
