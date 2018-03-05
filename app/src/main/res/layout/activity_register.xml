@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="app.blog.firebase.android.androidblogapp.LoginActivity">
+    tools:context="app.blog.firebase.android.androidblogapp.RegisterActivity">
 
     <ImageView
-        android:id="@+id/logoLogoImage"
+        android:id="@+id/registerLogoImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -18,10 +18,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login_page_logo" />
+        app:srcCompat="@drawable/register_logo" />
 
     <EditText
-        android:id="@+id/logoEmail"
+        android:id="@+id/registerEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -37,10 +37,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoLogoImage" />
+        app:layout_constraintTop_toBottomOf="@+id/registerLogoImage" />
 
     <EditText
-        android:id="@+id/logoPassword"
+        android:id="@+id/registerPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -56,28 +56,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/colorAccent"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
-        android:text="@string/login_button"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoPassword" />
-
-    <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/regButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -86,7 +68,7 @@
         android:backgroundTint="@android:color/white"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"
-        android:text="@string/login_create_account_button"
+        android:text="@string/register_button"
         android:textAllCaps="false"
         android:textColor="@color/colorAccent"
         android:textSize="14sp"
@@ -95,15 +77,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
-        android:id="@+id/progressBarLogin"
+        android:id="@+id/progressBarReg"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="48dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+
 </android.support.constraint.ConstraintLayout>

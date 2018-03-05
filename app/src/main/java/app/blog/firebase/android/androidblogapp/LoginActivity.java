@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,11 +36,20 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        loginEmail = findViewById(R.id.loginEmail);
-        loginPasswd = findViewById(R.id.loginPassword);
+        loginEmail = findViewById(R.id.logoEmail);
+        loginPasswd = findViewById(R.id.logoPassword);
         loginBtn = findViewById(R.id.loginButton);
         registerBtn = findViewById(R.id.registerButton);
         loginProgress = findViewById(R.id.progressBarLogin);
+
+        //after clicking register button - send to reg act
+        registerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent regIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(regIntent);
+            }
+        });
 
         //after clicking  login button
         loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +85,6 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     });
                 }
-
             }
         });
 

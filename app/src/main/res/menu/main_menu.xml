@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--add few menu items then id and title and set icons for search if u want search icon and set showAsAction as always to make it at the right of a toolbar-->
+
+
+    <item
+        android:id="@+id/actionSearch"
+        android:icon="@mipmap/action_search"
+        android:title="@string/action_search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/actionSettings"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/actionLogout"
+        android:title="@string/action_logout" />
+</menu>

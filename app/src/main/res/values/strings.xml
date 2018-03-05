@@ -4,5 +4,9 @@
     <string name="loginpage_password_hint">Password</string>
     <string name="login_logo_img">Logo for login page</string>
     <string name="login_button">Login to Account</string>
-    <string name="login_create_account_button" >Need a new Account?</string>
+    <string name="login_create_account_button">Need a new Account?</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Account Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="register_button">Create new account</string>
 </resources>
