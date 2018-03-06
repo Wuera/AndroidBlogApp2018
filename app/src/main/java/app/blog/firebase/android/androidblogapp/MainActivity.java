@@ -61,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
                 logout();
                 return true;
 
+            case R.id.actionSettings:
+                Intent settingsIntent = new Intent(MainActivity.this, SetupActivity.class);
+                startActivity(settingsIntent);
+
+                return true;
+
             default:
                 return false;
         }
