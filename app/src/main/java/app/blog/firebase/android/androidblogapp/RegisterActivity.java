@@ -59,6 +59,11 @@ public class RegisterActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
 
+                                //go to setup act (set name and  photo) after registering
+                                Intent setupIntent = new Intent(RegisterActivity.this, SetupActivity.class);
+                                startActivity(setupIntent);
+                                finish();
+
                             } else {
                                 String e = task.getException().getMessage();
                                 Toast.makeText(RegisterActivity.this, e, Toast.LENGTH_SHORT).show();
